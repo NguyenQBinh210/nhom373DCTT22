@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.header{
+    display: flex;
+    background-color: rgb(212, 100, 72);
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header img{
+    height: 60px;
+    max-width: 100%;
+}
+.chuc-nang>ul{
+    display: flex;
+    gap: 50px;
+}
+.chuc-nang>ul>li{
+    list-style: none;
+}
+.chuc-nang>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.user {
+    position: relative;
+    display: inline-block;
+}
+
+.user ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50px; /* Khoảng cách từ biểu tượng xuống menu */
+    right: 0;
+    background-color: #333; /* Màu nền menu */
+    color: #fff; /* Màu chữ menu */
+    border-radius: 5px;
+    display: none; /* Ẩn menu mặc định */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.user ul li {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.user ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.user ul li a:hover {
+    background-color: #575757; /* Màu nền khi hover vào mục menu */
+}
+
+.user:hover ul {
+    display: block; /* Hiện menu khi hover vào .user */
+}
+
+.tuy-chon:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(3, 3, 3);
+}
